@@ -10,7 +10,7 @@
   <ul>
     <h3> * All activities saved in local storage, so if you reload app (your browser) they stay. </h3>
     <h3>  * To delete all local storage savings in your browser:</h3>
-              <ol>1. Open developer console(press F12 or mouse right click => inspect)</ol>
+              <ol>1. Open developer console (press F12 or mouse right click => inspect)</ol>
               <ol>2. Go to console</ol>
               <ol>3. Print: app.restore() </ol>
               <ol>4. Hit "Enter"</ol>
