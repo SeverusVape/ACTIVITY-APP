@@ -1,8 +1,7 @@
-
-                           ACTIVITY APP
+#ACTIVITY APP
 <div>
   <ul>
-    <p> App made with OOP paradigm, and LIFLET library.</p>
+    <h3> * App made with OOP paradigm, and LIFLET library.</h3>
   </ul>
   <ul>
     <p> Add running/bicycle activity by clicking on a map and filling the form thats popup.</p>
