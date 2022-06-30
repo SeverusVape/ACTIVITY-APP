@@ -1,5 +1,5 @@
 <h1>ACTIVITY APP</h1>
--
+
 <div>
   <ul>
     <h3> * App made with OOP paradigm, and LIFLET library.</h3>
