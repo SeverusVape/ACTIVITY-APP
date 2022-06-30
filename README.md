@@ -2,7 +2,7 @@
 
 <div>
   <ul>
-    <h3> * App made with OOP paradigm, and LIFLET library.</h3>
+    <h3> * App made with OOP paradigm, and LEAFLET library (https://leafletjs.com/) .</h3>
   </ul>
   <ul>
     <h3> * Add running/bicycle activity by clicking on a map and filling the form thats popup.</h3>
