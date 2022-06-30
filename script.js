@@ -80,6 +80,8 @@ class App {
     constructor() {
         // * MAP LOADING
         this._getPosition();
+        // * GET LOCAL STORAGE
+        this._getLocalStorage();
         // * LISTENER FOR PIN - POPUP - INPUTS
         form.addEventListener("submit", this._newWorkout.bind(this));
         // * TOGGLE CADENCE & ELEVATION
@@ -118,6 +120,8 @@ class App {
 
         // On map "click" handler
         this.#map.on("click", this._showForm.bind(this));
+        // Local storage set marker
+        this.#workouts.forEach((work) => this._renderWorkoutMarker(work));
     }
 
     _showForm(mapE) {
@@ -191,6 +195,8 @@ class App {
         this._renderWorkout(workout);
         // hide form + clear input fields
         this._hideForm();
+        // set localStorage to all workouts
+        this._setLocalStorage();
     }
 
     _renderWorkoutMarker(workout) {
@@ -291,6 +297,25 @@ class App {
                 duration: 1,
             },
         });
+    }
+
+    _setLocalStorage() {
+        localStorage.setItem("workouts", JSON.stringify(this.#workouts));
+    }
+
+    _getLocalStorage() {
+        const data = JSON.parse(localStorage.getItem("workouts"));
+
+        if (!data) return;
+
+        this.#workouts = data;
+        this.#workouts.forEach((work) => this._renderWorkout(work));
+    }
+
+    // delete all data from local storage
+    reset() {
+        localStorage.removeItem("workouts");
+        location.reload();
     }
 }
 
