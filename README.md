@@ -5,7 +5,7 @@
     <h3> * App made with OOP paradigm, and LEAFLET library (https://leafletjs.com/) .</h3>
   </ul>
   <ul>
-    <h3> * Add running/bicycle activity by clicking on a map and filling the form thats popup.</h3>
+    <h3> * Add a running or cycling activity by clicking on the map and filling out the form that pops up</h3>
   </ul>
   <ul>
     <h3> * All activities are saved in local storage, so if you reload the app (your browser), they will stay. </h3>
